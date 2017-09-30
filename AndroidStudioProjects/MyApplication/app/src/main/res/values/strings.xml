@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="tempUnits">°F</string>
+    <string name="temp">60</string>
+    <string name="weatherType">Cloudy</string>
+    <string name="weatherString">The weather is</string>
+    <string name="feelsLike">Feels like:</string>
+    <string name="feelsLikeTemp">69</string>
+    <string name="clothingRecommended">Clothing Recommended</string>
+</resources>

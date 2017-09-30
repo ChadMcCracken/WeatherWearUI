@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.drewm.myapplication.MainActivity">
+
+    <Button
+        android:id="@+id/ClothingRecommended"
+        android:layout_width="387dp"
+        android:layout_height="67dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginTop="376dp"
+        android:background="?attr/colorButtonNormal"
+        android:elevation="0dp"
+        android:onClick="extendClothing"
+        android:text="@string/clothingRecommended"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="387dp"
+        android:layout_height="67dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginTop="309dp"
+        android:background="?attr/colorButtonNormal"
+        android:onClick="extendWeather"
+        android:text="Future Weather"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="387dp"
+        android:layout_height="67dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="443dp"
+        android:background="?attr/colorButtonNormal"
+        android:text="Button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Temperature"
+        android:layout_width="26dp"
+        android:layout_height="29dp"
+        android:text="@string/temp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tempIs"
+        app:layout_constraintLeft_toRightOf="@+id/tempIs"
+        app:layout_constraintTop_toTopOf="@+id/tempIs"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_alignBaseline="@+id/tempIs"
+        android:layout_alignBottom="@+id/tempIs"
+        android:layout_toRightOf="@+id/tempIs"
+        android:layout_toEndOf="@+id/tempIs" />
+
+    <TextView
+        android:id="@+id/TempUnits"
+        android:layout_width="17dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tempIs"
+        android:layout_toEndOf="@+id/feelsLikeTemp"
+        android:layout_toRightOf="@+id/feelsLikeTemp"
+        android:text="@string/tempUnits"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/feelsLikeTemp"
+        app:layout_constraintLeft_toRightOf="@+id/feelsLikeTemp"
+        app:layout_constraintTop_toTopOf="@+id/feelsLikeTemp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="22dp"
+        android:layout_height="29dp"
+        android:text="@string/tempUnits"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Temperature"
+        app:layout_constraintLeft_toRightOf="@+id/Temperature"
+        app:layout_constraintTop_toTopOf="@+id/Temperature"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_alignBaseline="@+id/Temperature"
+        android:layout_alignBottom="@+id/Temperature"
+        android:layout_toRightOf="@+id/Temperature"
+        android:layout_toEndOf="@+id/Temperature" />
+
+    <TextView
+        android:id="@+id/WeatherType"
+        android:layout_width="136dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/weatherString"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tempIs"
+        android:layout_width="180dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="17dp"
+        android:text="The temperature is: "
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@+id/weatherType"
+        android:layout_alignLeft="@+id/WeatherType"
+        android:layout_alignStart="@+id/WeatherType" />
+
+    <TextView
+        android:id="@+id/weatherType"
+        android:layout_width="65dp"
+        android:layout_height="29dp"
+        android:text="@string/weatherType"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/WeatherType"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/WeatherType"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/WeatherType"
+        android:layout_alignBaseline="@+id/WeatherType"
+        android:layout_alignBottom="@+id/WeatherType"
+        android:layout_toRightOf="@+id/WeatherType"
+        android:layout_toEndOf="@+id/WeatherType" />
+
+    <TextView
+        android:id="@+id/feelsLikeTemp"
+        android:layout_width="17dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/feelsLike"
+        android:layout_toEndOf="@+id/feelsLike"
+        android:layout_toRightOf="@+id/feelsLike"
+        android:text="@string/feelsLikeTemp"
+        app:layout_constraintBottom_toBottomOf="@+id/feelsLike"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/feelsLike"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/feelsLike"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/feelsLike"
+        android:layout_width="63dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:text="@string/feelsLike"
+        android:layout_below="@+id/tempIs"
+        android:layout_alignLeft="@+id/tempIs"
+        android:layout_alignStart="@+id/tempIs" />
+
+</RelativeLayout>
